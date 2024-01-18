@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 80px;
+      }
+      .nav-links a {
+        color: darkred;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      section {
+        display: flex;
+        gap: 20px;
+
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        width: 120px;
+        height: 90px;
+        display: none;
+      }
+
+      .card:target {
+        width: 240px;
+        height: 180px;
+        display: block;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.611);
+      }
+
+      .card-img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#curton">curtons</a></li>
+          <li><a href="#toys">soft toys</a></li>
+          <li><a href="#knife">knife's</a></li>
+          <li><a href="#cloth">clothing</a></li>
+          <li><a href="#sport-shoes">sports shoes</a></li>
+          <li><a href="#casual-shoes">casual shoes</a></li>
+          <li><a href="#shandels">shandels</a></li>
+          <li><a href="#hand-bag">hand bags</a></li>
+          <li><a href="#idols">idols</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="card" id="curton">
+        <img src="public/image/a1.jpg" class="card-img" />
+      </div>
+      <div class="card" id="toys">
+        <img src="public/image/a3.jpg" class="card-img" />
+      </div>
+      <div class="card" id="knife">
+        <img src="public/image/a2.jpg" class="card-img" />
+      </div>
+      <div class="card" id="cloth">
+        <img src="public/image/a4.jpg" class="card-img" />
+      </div>
+      <div class="card" id="sport-shoes">
+        <img src="public/image/b1.jpg" class="card-img" />
+      </div>
+      <div class="card" id="casual-shoes">
+        <img src="public/image/b2.jpg" class="card-img" />
+      </div>
+      <div class="card" id="shandels">
+        <img src="public/image/b3.jpg" class="card-img" />
+      </div>
+      <div class="card" id="hand-bag">
+        <img src="public/image/b4.jpg" class="card-img" />
+      </div>
+      <div class="card" id="idols">
+        <img src="public/image/c4.jpg" class="card-img" />
+      </div>
+    </section>
+  </body>
+</html>

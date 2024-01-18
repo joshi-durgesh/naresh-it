@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onchange</title>
+
+    <script>
+      function bodyload() {
+        document.querySelector("p").innerHTML = "Sample Text";
+      }
+
+      var size, color;
+
+      function ChangeFontSize() {
+        size = parseInt(document.getElementById("rangeFontSize").value);
+        document.querySelector("p").innerHTML = "Sample Text"
+          .fontsize(size)
+          .fontcolor(color);
+      }
+
+      function ChangeFontColor() {
+        color = document.getElementById("textColor").value;
+        document.querySelector("p").innerHTML = "Sample Text"
+          .fontcolor(color)
+          .fontsize(size);
+      }
+    </script>
+  </head>
+  <body onload="bodyload()">
+    <fieldset>
+      <legend>Formats</legend>
+      <dl>
+        <dt>Font Size</dt>
+        <dd>
+          1
+          <input
+            type="range"
+            id="rangeFontSize"
+            min="1"
+            max="7"
+            value="3"
+            onchange="ChangeFontSize()"
+          />7
+        </dd>
+
+        <dt>Font Color</dt>
+        <dd>
+          <input
+            type="color"
+            name=""
+            id="textColor"
+            onchange="ChangeFontColor()"
+          />
+        </dd>
+      </dl>
+    </fieldset>
+    <p></p>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <style>
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .win,
+      .lost {
+        display: inline-block;
+        color: white;
+        padding: 4px;
+        border-radius: 50px;
+        width: 20px;
+        text-align: center;
+      }
+
+      .win {
+        background-color: green;
+      }
+
+      .lost {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <table width="100%" border="1">
+      <caption>
+        ICC World Cup 2023-Point Table
+      </caption>
+      <colgroup span="8"></colgroup>
+      <thead>
+        <tr>
+          <th>Teams</th>
+          <th>M</th>
+          <th>W</th>
+          <th>L</th>
+
+          <th>NRR</th>
+          <th>Pts</th>
+          <th>Last 5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="public/image/ind.png" alt="india" />IND</td>
+          <td>9</td>
+          <td>9</td>
+          <td>0</td>
+
+          <td>2.570</td>
+          <td>18</td>
+          <td>
+            <span class="win">W</span>
+            <span class="win">W</span>
+            <span class="win">W</span>
+            <span class="win">W</span>
+            <span class="win">W</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="public/image/sa.png" alt="south africa" />SA</td>
+          <td>9</td>
+          <td>7</td>
+          <td>2</td>
+
+          <td>1.261</td>
+          <td>14</td>
+          <td>
+            <span class="win">W</span>
+            <span class="lost">L</span>
+            <span class="win">W</span>
+            <span class="win">W</span>
+            <span class="win">W</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="public/image/aus.png" alt="austrelia" />AUS</td>
+          <td>9</td>
+          <td>7</td>
+          <td>2</td>
+
+          <td>0.841</td>
+          <td>14</td>
+          <td>
+            <span class="win">W</span>
+            <span class="win">w</span>
+            <span class="win">W</span>
+            <span class="win">W</span>
+            <span class="win">W</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="public/image/nz.png" />NZ</td>
+          <td>9</td>
+          <td>5</td>
+          <td>4</td>
+          <td>0.743</td>
+          <td>10</td>
+          <td>
+            <span class="win">W</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="public/image/pak.png" />PAK</td>
+          <td>9</td>
+          <td>4</td>
+          <td>5</td>
+          <td>0.199</td>
+          <td>8</td>
+          <td>
+            <span class="lost">L</span>
+            <span class="win">W</span>
+            <span class="win">W</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="public/image/afg.png" />AFG</td>
+          <td>9</td>
+          <td>4</td>
+          <td>5</td>
+          <td>0.336</td>
+          <td>8</td>
+          <td>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+            <span class="win">W</span>
+            <span class="win">W</span>
+            <span class="win">W</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="public/image/eng.png" />ENG</td>
+          <td>9</td>
+          <td>3</td>
+          <td>6</td>
+          <td>0.572</td>
+          <td>6</td>
+          <td>
+            <span class="win">W</span>
+            <span class="win">W</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="public/image/ban.png" />BAN</td>
+          <td>9</td>
+          <td>2</td>
+          <td>7</td>
+          <td>1.087</td>
+          <td>4</td>
+          <td>
+            <span class="lost">L</span>
+            <span class="win">W</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="public/image/sr.png" />SL</td>
+          <td>9</td>
+          <td>2</td>
+          <td>7</td>
+          <td>-1.419</td>
+          <td>4</td>
+          <td>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+            <span class="win">W</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="public/image/ned.png" />NED</td>
+          <td>9</td>
+          <td>2</td>
+          <td>7</td>
+          <td>-1.825</td>
+          <td>4</td>
+          <td>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+            <span class="lost">L</span>
+            <span class="win">W</span>
+            <span class="lost">L</span>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="7">Legends:W - Won, L - Lost, NRR - Net Run Rate</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

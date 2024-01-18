@@ -1,0 +1,19 @@
+{
+  "name": "Samsung Galaxy S21 FE 5G with Snapdragon 888 (Navy, 128 GB)",
+  "offer_price": "31599",
+  "actual_price": "44000",
+  "product_review": {
+    "rate": 4.3,
+    "rating": 13400,
+    "review": 5550
+  },
+  "product_specification": {
+    "storage": "8 GB RAM | 128 GB ROM",
+    "dimension": "16.26 cm (6.4 inch) Full HD+ Display",
+    "camera": "12MP + 12MP + 8MP (OIS) 1 32MP Front Camera",
+    "battery": "4500 mAh Lithium-ion Battery",
+    "processor": "Snapdragon 888 Processor",
+    "extra": "NA"
+  },
+  "image": "../../public/image/samsung.jpg"
+}

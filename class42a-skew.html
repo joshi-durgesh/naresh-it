@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-in">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skew</title>
+
+    <style>
+      .container {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6rem;
+      }
+      .box {
+        width: 30px;
+        height: 190px;
+        background-color: orangered;
+        transform: skewY(25deg);
+        transition: 200ms;
+      }
+
+      .box:hover {
+        transform: skewY(-25deg);
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

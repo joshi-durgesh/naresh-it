@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-in">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Modal</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+
+  <body class="container-fluid">
+    <button
+      class="btn btn-primary mt-2"
+      data-bs-toggle="modal"
+      data-bs-target="#login"
+    >
+      Login
+    </button>
+
+    <button
+      class="bi bi-cart3 btn btn-warning mt-2"
+      data-bs-toggle="modal"
+      data-bs-target="#cart"
+    >
+      Your Cart
+    </button>
+
+    <div class="modal fade" id="login">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="bi bi-person-fill">User Login</h3>
+            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <dl>
+              <dt>User Name</dt>
+              <dd>
+                <input type="text" class="form-control" />
+              </dd>
+              <dt>Password</dt>
+              <dd>
+                <input type="text" class="form-control" />
+              </dd>
+              <dt>User Name</dt>
+              <dd>
+                <input type="text" class="form-control" />
+              </dd>
+              <dt>Password</dt>
+              <dd>
+                <input type="text" class="form-control" />
+              </dd>
+              <dt>User Name</dt>
+              <dd>
+                <input type="text" class="form-control" />
+              </dd>
+              <dt>Password</dt>
+              <dd>
+                <input type="text" class="form-control" />
+              </dd>
+              <dt>User Name</dt>
+              <dd>
+                <input type="text" class="form-control" />
+              </dd>
+              <dt>Password</dt>
+              <dd>
+                <input type="text" class="form-control" />
+              </dd>
+              <dt>User Name</dt>
+              <dd>
+                <input type="text" class="form-control" />
+              </dd>
+              <dt>Password</dt>
+              <dd>
+                <input type="text" class="form-control" />
+              </dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success">Login</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="cart">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Your Cart</h3>
+            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Price</th>
+                  <th>Preview</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>IPhone Blue</td>
+                  <td>
+                    <img
+                      src="../public/image/iphone-blue.jpeg"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>&#8377; 65,999</td>
+                </tr>
+                <tr>
+                  <td>IPhone Starlight</td>
+                  <td>
+                    <img
+                      src="../public/image/iPhone-Starlight.jpg"
+                      width="50"
+                      height="50"
+                    />
+                  </td>
+                  <td>&#8377; 65,999</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

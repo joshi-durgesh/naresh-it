@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-in">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="public/image/favicon.ico" />
+    <title>Order and unorderd list</title>
+
+    <meta
+      name="description"
+      content="this website is about the order and unorderd list"
+    />
+    <meta name="keywords" content="order list, unorderd list, list" />
+
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <style>
+      .orderlist {
+        background-color: beige;
+      }
+
+      /*How to remove number form the order list*/
+      /* .orderlist ol {
+        list-style: none;
+      } */
+
+      .unorderlist {
+        background-color: wheat;
+      }
+
+      .scroll {
+        list-style: none;
+        border: 1px solid black;
+        width: 300px;
+        height: 150px;
+        overflow: auto;
+      }
+
+      .by-grid {
+        display: grid;
+        grid-template-columns: 6rem 6rem;
+      }
+
+      .by-column {
+        columns: 2;
+      }
+
+      .img-in-ul {
+        list-style-image: url(public/image/tick.png);
+      }
+
+      .ul-social {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="orderlist">
+      <h2>Order list</h2>
+
+      <ol>
+        <li>
+          Html
+          <ol type="a">
+            <li>Hyper Text Markup Language</li>
+            <li>It is presentation language</li>
+          </ol>
+        </li>
+        <li>
+          Css
+          <ol type="i">
+            <li>Cascading style sheet</li>
+            <li>It is used for styling page</li>
+          </ol>
+        </li>
+        <li>JavaScript</li>
+      </ol>
+    </div>
+
+    <div class="unorderlist">
+      <h2>Unorderd list</h2>
+
+      <ul>
+        <li>
+          Html
+          <ul type="">
+            <li>Hyper Text Markup Language</li>
+            <li>It is presentation language</li>
+          </ul>
+        </li>
+        <li>
+          Css
+          <ul>
+            <li>Cascading style sheet</li>
+            <li>It is used for styling page</li>
+          </ul>
+        </li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="scrollable-list">
+      <h2>Scrollable list and removing number form the list</h2>
+
+      <ol class="scroll">
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2>to create item in multiple column</h2>
+
+      <h3>by grid method</h3>
+      <ol class="by-grid">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jquery</li>
+      </ol>
+
+      <h3>by column</h3>
+      <ol class="by-column">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jquery</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2>how to add image to bullets in unorder list</h2>
+      <p>we can add image using css</p>
+      <ul class="img-in-ul">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jquery</li>
+      </ul>
+
+      <p>we can add images individualy</p>
+      <ul class="ul-social">
+        <li class="bi bi-facebook"><span>Facebook</span></li>
+        <li class="bi bi-instagram"><span>Instagram</span></li>
+        <li class="bi bi-twitter"><span>Twitter</span></li>
+        <li class="bi bi-youtube"><span>Youtube</span></li>
+      </ul>
+    </div>
+  </body>
+</html>

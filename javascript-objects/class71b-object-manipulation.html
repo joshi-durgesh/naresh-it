@@ -1,0 +1,37 @@
+<script>
+  var tv = {
+    Name: "Samsung",
+    Price: 25000,
+    Stock: true,
+    Cable: "Na",
+  };
+
+  //for in loop to get key of the given object
+  // for (var property in tv) {
+  //   document.write(property);
+  // }
+  //to get value key and value using for in
+  for (var key in tv) {
+    document.write(`${key}:${tv[key]}<br>`);
+  }
+
+  //by using Object keys to get key of object
+  Object.keys(tv).map(function (key) {
+    document.write(`${key}<br>`);
+  });
+  //to get key and value of object using Object keys
+
+  Object.keys(tv).map(function (key) {
+    document.write(`${key}:${tv[key]}<br>`);
+  });
+
+  //to check that key is present or not
+  console.log("Cable" in tv); //"key" in object
+
+  //to delete key value from object
+  delete tv.Cable;
+  console.log(tv);
+
+  //to get the length of object
+  console.log(Object.keys(tv).length);
+</script>

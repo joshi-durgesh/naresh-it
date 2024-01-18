@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-in">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav-tabs</title>
+    <link rel="shortcut icon" href="../public/image/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container-fluid">
+    <header class="mt-3">
+      <h2>Product Details</h2>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a href="#basic" data-bs-toggle="tab" class="nav-link active"
+            >Basic Details</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#preview" data-bs-toggle="tab" class="nav-link">Preview</a>
+        </li>
+        <li class="nav-item">
+          <a href="#features" data-bs-toggle="tab" class="nav-link">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#ratings" data-bs-toggle="tab" class="nav-link"
+            >Rating & Reviews</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content mt-4 p-4">
+        <div class="tab-pane active" id="basic">
+          <h1>iPhone 14</h1>
+          <h2>&#8377;59,999</h2>
+        </div>
+        <div class="tab-pane" id="preview">
+          <img
+            src="../public/image/iphone-blue.jpeg"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="tab-pane" id="features">
+          <ul class="list-unstyled">
+            <li class="bi bi-tag-fill text-success">
+              <span class="text-dark">128 GB ROM</span>
+            </li>
+            <li class="bi bi-tag-fill text-success">
+              <span class="text-dark"
+                >15.49 cm (6.1 inch) Super Retina XDR Display</span
+              >
+            </li>
+            <li class="bi bi-tag-fill text-success">
+              <span class="text-dark">12MP + 12MP | 12MP Front Camera</span>
+            </li>
+            <li class="bi bi-tag-fill text-success">
+              <span class="text-dark"
+                >A15 Bionic Chip, 6 Core Processor Processor</span
+              >
+            </li>
+            <li class="bi bi-tag-fill text-success">
+              <span class="text-dark"
+                >1 Year Warranty for Phone and 6 Months Warranty for In-Box
+                Accessories</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="ratings">
+          4.6 <span class="bi bi-star-fill text-success"></span> Ratings & 34000
+          Reviews
+        </div>
+      </div>
+    </header>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

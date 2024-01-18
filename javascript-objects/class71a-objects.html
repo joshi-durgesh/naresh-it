@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+    <script>
+      const tv = {
+        Name: "Samsung LED TV 32inch",
+        Price: 0.0,
+        Stock: true,
+        ShippedTo: ["Delhi", "Hyderabad"],
+        Rating: { Rate: 4.6, Count: 5000 },
+      };
+      tv.Price = prompt("Enter the price of tv");
+      document.write(
+        `Name=${tv.Name} <br>Price=${tv.Price} <br>Stock=${
+          tv.Stock
+        } <br>ShippedTo =${tv.ShippedTo.join("/")}<br>Rating=${
+          tv.Rating.Rate
+        }[${tv.Rating.Count}]`
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

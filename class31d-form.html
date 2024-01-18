@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Demo</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container-fluid">
+    <form class="border border-2 bg-dark text-white border-dark p-4 w-25 mt-4">
+      <h3 class="bi bi-person-fill">Register User</h3>
+      <div class="mb-4">
+        <label class="form-label">User Name</label>
+        <div>
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="form-label">Password</label>
+        <div>
+          <input type="password" class="form-control" />
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="form-label">Age</label>
+        <div>
+          <input class="form-range" type="range" min="15" max="30" value="22" />
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="form-label">Your City</label>
+        <div>
+          <select class="form-select">
+            <option>Choose City</option>
+            <option>Delhi</option>
+            <option>Hyd</option>
+          </select>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="form-label">Subscribe</label>
+        <div class="form-switch">
+          <input type="checkbox" class="form-check-input" />
+          <label class="form-check-label">Yes</label>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-light w-100">Register</button>
+      </div>
+    </form>
+  </body>
+</html>

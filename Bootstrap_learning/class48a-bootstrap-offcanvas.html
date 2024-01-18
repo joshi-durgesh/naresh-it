@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offcanvas</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container-fluid">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          data-bs-target="#sidebar"
+          data-bs-toggle="offcanvas"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" id="sidebar">
+          <div class="offcanvas-header">
+            <h2>Shopper</h2>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="dropend">
+              <button class="dropdown-toggle w-100 btn btn-dark">
+                Electronics
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

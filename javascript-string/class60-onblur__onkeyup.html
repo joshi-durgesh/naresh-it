@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function VerifyName() {
+        var UserId = document.getElementById("txtId").value;
+        var lblError = document.getElementById("lblError");
+        if (UserId == "") {
+          lblError.innerHTML = "User Id Required"
+            .fontcolor("red")
+            .fontsize(2)
+            .italics();
+        } else {
+          lblError.innerHTML = "";
+        }
+      }
+
+      function ChangeCode() {
+        var ifscCode = document.getElementById("txtCode").value;
+        document.getElementById("txtCode").value = ifscCode.toUpperCase();
+      }
+    </script>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Register</legend>
+      <dl>
+        <dt>User Id</dt>
+        <dd>
+          <input
+            type="text"
+            placeholder="User Id Block Letters Only"
+            onblur="VerifyName()"
+            id="txtId"
+          />
+        </dd>
+        <dd id="lblError"></dd>
+        <dt>IFSC Code</dt>
+        <dd>
+          <input type="text" onkeyup="ChangeCode()" size="10" id="txtCode" />
+        </dd>
+      </dl>
+    </fieldset>
+  </body>
+</html>

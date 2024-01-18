@@ -1,0 +1,14 @@
+<script>
+  function TitleCase(str) {
+    var sentence = str.split(" ");
+    var titleCaseSentence = "";
+    for (let x = 0; x < sentence.length; x++) {
+      const firstChar = sentence[x].charAt(0).toUpperCase();
+      const restChar = sentence[x].substring(1);
+      titleCaseSentence += firstChar + restChar + " ";
+    }
+    document.write(titleCaseSentence);
+  }
+
+  TitleCase(prompt("Enter any string:"));
+</script>

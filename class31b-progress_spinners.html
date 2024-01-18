@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-in">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap | progress | spinners</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container-fluid">
+    <h2>Progress</h2>
+
+    <div class="progress">
+      <div
+        class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+        style="width: 30%"
+      >
+        Underweight
+      </div>
+      <div class="progress-bar" style="width: 30%">Normal</div>
+      <div
+        class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+        style="width: 30%"
+      >
+        Overweight
+      </div>
+      <div class="progress-bar bg-danger" style="width: 30%">Obesity</div>
+    </div>
+
+    <h2>Downloading</h2>
+    <div class="progress">
+      <div
+        class="progress-bar bg-success progress-bar-animated progress-bar-striped"
+        style="width: 30%"
+      >
+        30% Completed
+      </div>
+      <div class="progress-bar bg-danger" style="width: 70%">70% Remaining</div>
+    </div>
+
+    <h2>Spinners</h2>
+    <div class="spinner-border text-primary"></div>
+    <div class="spinner-grow text-danger"></div>
+    <button class="btn btn-outline-primary">
+      <span class="spinner-border spinner-border-sm me-2"></span>Loading
+    </button>
+    <button class="btn btn-primary">
+      <span class="spinner-border spinner-border-sm me-2"></span> Loading
+    </button>
+  </body>
+</html>

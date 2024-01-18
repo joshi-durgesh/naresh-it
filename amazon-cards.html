@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="shorcut icon" href="public/image/amazon-icon.png" />
+
+    <style>
+      body {
+        background-color: #e3e6e6;
+      }
+      section {
+        margin-top: -350px;
+      }
+
+      .cards-section {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        gap: 20px;
+        padding: 0 20px;
+        font-family: arial;
+      }
+
+      .cards {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .card-header {
+        margin: 20px;
+        margin-bottom: 0;
+      }
+
+      .card-header-title {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+
+      .card-body {
+        display: grid;
+        margin: 20px;
+        margin-bottom: 0;
+        grid-template-columns: 6fr 6fr;
+        gap: 20px;
+      }
+
+      .card-img-info {
+        font-size: 12px;
+        line-height: 1.2;
+      }
+
+      .card-footer {
+        margin: 20px;
+        color: rgb(93, 148, 170);
+        font-size: 14px;
+      }
+
+      .cards-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .card-main-header-title {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 20px;
+      }
+
+      .card-main-btn {
+        background-color: #f7ca00;
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+      }
+
+      .card-main-btn span {
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .cards-main-top {
+        background-color: #fff;
+        padding: 20px;
+      }
+
+      .card-body-1 {
+        padding: 20px;
+        padding-bottom: 0;
+      }
+
+      div img {
+        width: 100%;
+      }
+
+      .add-img {
+        width: 85%;
+      }
+
+      footer {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+      }
+
+      .footer-btn {
+        text-align: center;
+        padding: 15px;
+        background-color: #3f4c5d;
+        color: #fff;
+      }
+
+      .footer-content {
+        background-color: #232f3e;
+        padding: 40px 180px;
+        color: #fff;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+      }
+
+      .footer-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .footer-title ~ span {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: rgb(207, 207, 207);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="public/image/amazon-bg.jpg"
+        alt="amazon background image"
+        width="100%"
+      />
+    </header>
+    <section>
+      <div class="cards-section">
+        <div class="cards">
+          <div class="card-header">
+            <div class="card-header-title">
+              Up to 70% off | Deals on Amazon Brands & more
+            </div>
+            <!-- <div class="card-header-subtitle">Amazon Brands & more</div> -->
+          </div>
+          <div class="card-body">
+            <div>
+              <img src="public/image/a1.jpg" alt="" />
+              <div class="card-img-info">Starting &#8377;99 | Home decor</div>
+            </div>
+            <div>
+              <img src="public/image/a2.jpg" alt="" />
+              <div class="card-img-info">
+                Starting &#8377;139 | Kitchen products
+              </div>
+            </div>
+            <div>
+              <img src="public/image/a3.jpg" alt="" />
+              <div class="card-img-info">Starting &#8377;88 | Toys & games</div>
+            </div>
+            <div>
+              <img src="public/image/a4.jpg" alt="" />
+              <div class="card-img-info">
+                Min. 60% off | Festive collections
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">See all offers</div>
+        </div>
+        <div class="cards">
+          <div class="card-header">
+            <div class="card-header-title">
+              Starting ₹199 | Shoes & handbags
+            </div>
+          </div>
+          <div class="card-body">
+            <div>
+              <img src="public/image/b1.jpg" alt="" />
+              <div class="card-img-info">Sports shoes</div>
+            </div>
+            <div>
+              <img src="public/image/b2.jpg" alt="" />
+              <div class="card-img-info">Men's shoes</div>
+            </div>
+            <div>
+              <img src="public/image/b3.jpg" alt="" />
+              <div class="card-img-info">Women's shoes</div>
+            </div>
+            <div>
+              <img src="public/image/b4.jpg" alt="" />
+              <div class="card-img-info">Handbags</div>
+            </div>
+          </div>
+          <div class="card-footer">See all offers</div>
+        </div>
+        <div class="cards">
+          <div class="card-header">
+            <div class="card-header-title">
+              Minimum 50% off | Restyle your home
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div>
+              <img src="public/image/c1.jpg" alt="" />
+              <div class="card-img-info">Curtains</div>
+            </div>
+            <div>
+              <img src="public/image/c2.jpg" alt="" />
+              <div class="card-img-info">Floor lamps</div>
+            </div>
+            <div>
+              <img src="public/image/c3.jpg" alt="" />
+              <div class="card-img-info">under bed storage</div>
+            </div>
+            <div>
+              <img src="public/image/c4.jpg" alt="" />
+              <div class="card-img-info">Showpieces and idols</div>
+            </div>
+          </div>
+          <div class="card-footer">See all offers</div>
+        </div>
+        <div class="cards-main">
+          <div class="cards-main-top">
+            <div class="card-main-header">
+              <div class="card-main-header-title">
+                Sign in for your best experience
+              </div>
+              <div class="card-main-btn"><span>Sign in securely</span></div>
+            </div>
+          </div>
+          <img src="public/image/d1.jpg" class="add-img" />
+        </div>
+
+        <div class="cards">
+          <div class="card-header">
+            <div class="card-header-title">
+              Starting ₹349 | Bestselling headphones
+            </div>
+          </div>
+          <div class="card-body-1">
+            <img src="public/image/e1.jpg" alt="" />
+          </div>
+          <div class="card-footer">See all offers</div>
+        </div>
+
+        <div class="cards">
+          <div class="card-header">
+            <div class="card-header-title">
+              Books, Toys, Grooming and gaming | Starting ₹99
+            </div>
+          </div>
+          <div class="card-body">
+            <div>
+              <img src="public/image/f1.jpg" alt="" />
+              <div class="card-img-info">Childrens book | Starting ₹99</div>
+            </div>
+            <div>
+              <img src="public/image/f2.jpg" alt="" />
+              <div class="card-img-info">Soft toys I Under ₹399</div>
+            </div>
+            <div>
+              <img src="public/image/f3.jpg" alt="" />
+              <div class="card-img-info">Trimmer | Under ₹999</div>
+            </div>
+            <div>
+              <img src="public/image/f4.jpg" alt="" />
+              <div class="card-img-info">
+                Gaming accessories | Starting ₹199
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">See all offers</div>
+        </div>
+
+        <div class="cards">
+          <div class="card-header">
+            <div class="card-header-title">
+              Deals on smartphones that suits your budget
+            </div>
+          </div>
+          <div class="card-body">
+            <div>
+              <img src="public/image/g1.jpg" alt="" />
+              <div class="card-img-info">Budget | Under ₹10,000</div>
+            </div>
+            <div>
+              <img src="public/image/g2.jpg" alt="" />
+              <div class="card-img-info">Mid range | ₹10,000 - ₹25,000</div>
+            </div>
+            <div>
+              <img src="public/image/g3.jpg" alt="" />
+              <div class="card-img-info">Premium | ₹25,000 - ₹40,000</div>
+            </div>
+            <div>
+              <img src="public/image/g4.jpg" alt="" />
+              <div class="card-img-info">Ultra premium | Above ₹40,000</div>
+            </div>
+          </div>
+          <div class="card-footer">See all offers</div>
+        </div>
+
+        <div class="cards">
+          <div class="card-header">
+            <div class="card-header-title">
+              Up to 80% off | Laptops, smartwatches & headphones
+            </div>
+          </div>
+          <div class="card-body-1">
+            <img src="public/image/h1.jpg" alt="" />
+          </div>
+          <div class="card-footer">See all offers</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-btn"><span>Back to top</span></div>
+      <div class="footer-content">
+        <div>
+          <div class="footer-title">Get to Know Us</div>
+          <span>Careers</span>
+          <span>Press Releases</span>
+          <span>Amazon Science</span>
+        </div>
+        <div>
+          <div class="footer-title">Connect with Us</div>
+          <span>Facebook</span>
+          <span>Twitter</span>
+          <span>Instagram</span>
+        </div>
+        <div>
+          <div class="footer-title">Make Money with Us</div>
+          <span>Sell on Amazon</span>
+          <span>Sell under Amazon Accelerator</span>
+          <span>Protect and Build Your Brand</span>
+          <span>Amazon Global Selling</span>
+          <span>Become an Affiliate</span>
+          <span>Fulfilment by Amazon</span>
+          <span>Advertise Your Products</span>
+          <span>Amazon-pay-omMerchants</span>
+        </div>
+        <div>
+          <div class="footer-title">Let Us Help You</div>
+          <span>COVID-19 and Amazon</span>
+          <span>Your Account</span>
+          <span>Returns Centre</span>
+          <span>100% Purchase Protection</span>
+          <span>Amazon App Download</span>
+          <span>Help</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

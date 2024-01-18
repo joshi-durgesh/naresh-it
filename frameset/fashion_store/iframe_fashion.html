@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iFrame fashion</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      iframe {
+        width: 100%;
+        height: 700px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+        display: inline-block;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+      }
+
+      .logo a {
+        font-size: 26px;
+      }
+
+      .btn a {
+        font-size: 18px;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="#">Shopper.</a></div>
+      <nav>
+        <ul>
+          <li><a href="home.html" target="mainFrame">Home</a></li>
+          <li><a href="kids.html" target="mainFrame">Kids</a></li>
+          <li><a href="men.html" target="mainFrame">Men</a></li>
+          <li><a href="women.html" target="mainFrame">Women</a></li>
+        </ul>
+      </nav>
+      <div class="btn"><a href="#">sign in</a></div>
+    </header>
+    <section>
+      <iframe src="" name="mainFrame" frameborder="0"></iframe>
+    </section>
+  </body>
+</html>

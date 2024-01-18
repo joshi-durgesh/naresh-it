@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes Spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      body {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      .spinner {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        border-top: 20px solid red;
+        border-right: 20px solid red;
+        border-left: 20px solid red;
+        border-bottom: 20px solid black;
+        animation-name: Spin;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      .progress {
+        width: 500px;
+        height: 30px;
+        background-color: azure;
+        margin-top: 50px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+      }
+
+      .progress-animated {
+        width: 80px;
+        height: 26px;
+        border-radius: 26px;
+        background-color: orange;
+        transform: translateX(2px);
+        animation-name: progress-anime;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes progress-anime {
+        form {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(418px);
+        }
+        to {
+          transform: translateX(2px);
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="spinner"></div>
+    </div>
+    <div>
+      <!-- <progress></progress> -->
+      <div class="progress">
+        <div class="progress-animated"></div>
+      </div>
+    </div>
+  </body>
+</html>
