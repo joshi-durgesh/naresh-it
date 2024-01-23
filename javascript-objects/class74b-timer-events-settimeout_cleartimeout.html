@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer event</title>
+    <script>
+      function Msg1() {
+        document.getElementById("status").innerHTML = "Hello";
+      }
+      function Msg2() {
+        document.getElementById("status").innerHTML = "How are you";
+      }
+      function Msg3() {
+        document.getElementById("status").innerHTML = "Welcome to javascript";
+      }
+
+      let m1, m2, m3;
+      function VolumeClick() {
+        m1 = setTimeout(Msg1, 1000);
+        m2 = setTimeout(Msg2, 3000);
+        m3 = setTimeout(Msg3, 5000);
+      }
+
+      function CancleClick() {
+        clearTimeout(m2);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="VolumeClick()">Volume+</button>
+    <button onclick="CancleClick()">Cancel Msg-2</button>
+    <br /><br />
+    <p id="status"></p>
+  </body>
+</html>
