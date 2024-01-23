@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script type="text/javascript">
+      function FetchClick() {
+        fetch(
+          "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=QDX0ADuTxkEYcuRUS8dUoALqnNP2qJLG1DpP5Vhj"
+        )
+          .then(function (response) {
+            console.log(response);
+            return response.json();
+          })
+          .then(function (MarsObj) {
+            MarsObj.photos.map(function (item) {
+              var tr = document.createElement("tr");
+              var tdId = document.createElement("td");
+              var tdCamera = document.createElement("td");
+              var tdRover = document.createElement("td");
+              var tdImage = document.createElement("td");
+
+              tdId.innerHTML = item.id;
+              tdCamera.innerHTML = item.camera.full_name;
+              tdRover.innerHTML = item.rover.name;
+              tdImage.innerHTML = `<a href=${item.img_src} target="_blank"><img src=${item.img_src} width="100" height="100"></a>`;
+
+              tr.appendChild(tdId);
+              tr.appendChild(tdCamera);
+              tr.appendChild(tdRover);
+              tr.appendChild(tdImage);
+
+              document.querySelector("tbody").appendChild(tr);
+            });
+          });
+      }
+    </script>
+  </head>
+  <body class="container-fluid">
+    <button onclick="FetchClick()" class="btn btn-primary mt-4">
+      Fetch Data
+    </button>
+    <table class="mt-4 table table-hover">
+      <thead>
+        <tr>
+          <th>Photo Id</th>
+          <th>Camera Name</th>
+          <th>Rover Name</th>
+          <th>Preview</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>

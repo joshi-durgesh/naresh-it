@@ -1,0 +1,53 @@
+<script>
+  //   var today = new Date();
+  //   console.log(today.getDay());
+  //   console.log(today.getHours());
+  //   console.log(today.getMinutes());
+  //   console.log(today.getMilliseconds());
+  //   console.log(today.getDate());
+  //   console.log(today.getMonth());
+  //   console.log(today.getFullYear());
+  //   console.log(today.getYear());
+  //   console.log(today.toLocaleDateString());
+  //   console.log(today.toLocaleTimeString());
+  //   console.log(today.toString());
+  //   console.log(today.toDateString());
+  //   console.log(today.toTimeString());
+
+  //to get custom day date month
+  var now = new Date();
+  var day = [
+    "sunday",
+    "monday",
+    "tuseday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+  ];
+  var month = [
+    "january",
+    "february",
+    "march",
+    "april",
+    "may",
+    "june",
+    "july",
+    "augest",
+    "september",
+    "october",
+    "november",
+    "december",
+  ];
+
+  //we can dinamically set date month seconds milliseconds hours  minutes full year
+
+  //   now.setDate(25);
+  //   now.setMonth(3);
+
+  document.write(
+    `${day[now.getDay()]} ${now.getDate()} ${
+      month[now.getMonth()]
+    } ${now.getFullYear()}`
+  );
+</script>
