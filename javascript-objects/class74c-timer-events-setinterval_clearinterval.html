@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function Clock() {
+        var now = new Date();
+        var msg = "";
+        var hrs = now.getHours();
+        if (hrs >= 0 && hrs <= 12) {
+          msg = "Good Morning";
+        } else if (hrs >= 13 && hrs <= 16) {
+          msg = "Good Afternoon";
+        } else if (hrs >= 17 && hrs <= 23) {
+          msg = "Good Evening";
+        }
+        document.querySelector("p").innerHTML =
+          now.toLocaleTimeString() + "<br>" + msg;
+      }
+      function bodyload() {
+        setInterval(Clock, 1000);
+      }
+    </script>
+  </head>
+  <body onload="bodyload()">
+    <p align="center"></p>
+  </body>
+</html>
